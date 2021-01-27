@@ -7,10 +7,8 @@ import random
 from matplotlib import pyplot as plt
 import pandas as pd
 from sklearn import model_selection
-from sklearn.model_selection import StratifiedKFold
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.svm import SVC
-from sklearn import metrics
 from classifiers.SVC_clf import mutation_svc, SVC_parameters_fitness, SVCParametersFeatures
 from classifiers.decision_tree_clf import decision_tree_fitness, DecisionTreeParametersFeatures, \
     mutation_decision_tree
@@ -152,12 +150,12 @@ def main():
     print("Set mutation probablility: ")
     # user_input_mutation_probability = input()
     # probabilityMutation = float(user_input_mutation_probability)
-    probabilityMutation = 0.15
+    probabilityMutation = 0.1
 
     print("Set crossover probability: ")
     # user_input_crossover_probability = input()
     # probabilityCrossover = float(user_input_crossover_probability)
-    probabilityCrossover = 0.8
+    probabilityCrossover = 0.9
     print("Set number of generations: ")
     # user_input_number_of_generations = input()
     # numberIteration = int(user_input_number_of_generations)

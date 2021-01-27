@@ -17,7 +17,7 @@ def RandomForestParametersFeatures(number_of_features, icls):
     criterion = ["gini", "entropy"]
     genome.append(criterion[random.randint(0, 1)])
 
-    max_depth = random.randint(1, 32)
+    max_depth = random.randint(1, 40)
     genome.append(max_depth)
 
     min_samples_split = random.uniform(0.1, 1)

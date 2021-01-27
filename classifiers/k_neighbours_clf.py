@@ -65,7 +65,7 @@ def mutationKNeighbors(individual):
         individual[2] = algorithms[random.randint(0, 2)]
 
     elif number_parameter == 3:
-        leaf_size = random.randint(10, 60)
+        leaf_size = random.randint(1, 50)
         individual[3] = leaf_size
 
     else:
